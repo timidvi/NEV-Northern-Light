@@ -118,7 +118,7 @@
 	..()
 
 /datum/asset/simple/ores/register()
-	for(var/type in subtypesof(/obj/item/stack/ore))
+	for(var/type in subtypesof(/obj/item/ore)) //For when this is made into a stack type
 		var/filename = sanitizeFileName("[type].png")
 		var/icon/I = getFlatTypeIcon(type)
 		assets[filename] = I
@@ -162,13 +162,13 @@
 		var/icon/I = icon(P.icon, P.icon_state)
 		assets[filename] = I
 	..()
-
+/* Used with circuits, something NEV seems to not have
 /datum/asset/simple/codicon
 	assets = list(
 		"codicon.css" = 'html/codicon/codicon.css',
 		"codicon.ttf" = 'html/codicon/codicon.ttf'
 	)
-
+*/
 /datum/asset/simple/directories/nanoui
 	dirs = list(
 		"nano/js/",
