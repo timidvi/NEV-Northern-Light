@@ -37,7 +37,7 @@ GLOBAL_LIST_INIT(floating_chat_colors, list())
 				C.images += gibberish*/
 // Eclipse edit: Remove Floating Say
 /proc/generate_floating_text(atom/movable/holder, message, style, size, duration, show_to)
-	var/image/I = image(null, holder)
+/*	var/image/I = image(null, holder)
 	I.layer = FLY_LAYER
 	I.alpha = 0
 	I.maptext_width = 80
@@ -65,4 +65,6 @@ GLOBAL_LIST_INIT(floating_chat_colors, list())
 /proc/remove_images_from_clients(image/I, list/show_to)
 	for(var/client/C in show_to)
 		C.images -= I
-		qdel(I)
+		qdel(I)*/
+		//Eclipse edit: Deletes 'floating text', also known as Runechat
+		//Yes, I added the word Runechat for my own ability to locate these changes again later
