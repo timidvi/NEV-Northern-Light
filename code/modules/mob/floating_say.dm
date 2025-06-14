@@ -6,7 +6,7 @@ GLOBAL_LIST_INIT(floating_chat_colors, list())
 	var/list/stored_chat_text
 
 /atom/movable/proc/animate_chat(message, datum/language/language, small, list/show_to, duration, verb)
-	set waitfor = FALSE
+/*	set waitfor = FALSE
 
 	var/style	//additional style params for the message
 	var/fontsize = 6
@@ -34,8 +34,8 @@ GLOBAL_LIST_INIT(floating_chat_colors, list())
 			if(C.mob.say_understands(null, language))
 				C.images += understood
 			else
-				C.images += gibberish
-
+				C.images += gibberish*/
+// Eclipse edit: Remove Floating Say
 /proc/generate_floating_text(atom/movable/holder, message, style, size, duration, show_to)
 	var/image/I = image(null, holder)
 	I.layer = FLY_LAYER
