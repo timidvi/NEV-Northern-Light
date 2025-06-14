@@ -1004,7 +1004,7 @@ Checks if a list has the same entries and values as an element of big.
 
 	return return_list
 
-//NEV
+// NEV
 /// A version of deep_copy_list that actually supports associative list nesting: list(list(list("a" = "b"))) will actually copy correctly.
 /proc/deep_copy_list_alt(list/inserted_list)
 	if(!islist(inserted_list))
