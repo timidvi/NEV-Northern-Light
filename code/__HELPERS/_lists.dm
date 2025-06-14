@@ -1012,7 +1012,7 @@ Checks if a list has the same entries and values as an element of big.
 	var/copied_list = inserted_list.Copy()
 	. = copied_list
 	for(var/key_or_value in inserted_list)
-		if(isnum_safe(key_or_value) || !inserted_list[key_or_value])) //For some reason this needs a spare ), something is likely insainly broken!
+		if(isnum_safe(key_or_value) || !inserted_list[key_or_value])
 			continue
 		var/value = inserted_list[key_or_value]
 		var/new_value = value
