@@ -52,7 +52,7 @@ var/list/blacklist = list()
 //		return 1
 	if(!aeiou_whitelist)
 		log_misc("nestor you fucked up!")
-		return 0
+		return 1
 	for (var/s in aeiou_whitelist)
 		if(findtext(s,"[lowertext(M.ckey)]"))
 			return 1
@@ -66,7 +66,7 @@ var/list/blacklist = list()
 //		return 1
 	if(!aeiou_whitelist)
 		log_misc("nestor you fucked up!")
-		return 0
+		return 1
 	for (var/s in aeiou_whitelist)
 		if(findtext(s,"[lowertext(checkKey)]"))
 			return 1
