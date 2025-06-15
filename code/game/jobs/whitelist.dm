@@ -59,7 +59,7 @@ var/list/blacklist = list()
 		if(findtext(s,"[replacetext(lowertext(M.ckey), " ", "")]"))
 			return 1
 	log_misc("[lowertext(M.ckey)] tried to join, but they're not whitelisted!")
-	return 0
+	return 1
 
 /proc/is_key_whitelisted(var/checkKey)
 //	if(check_rights(R_ADMIN, 0))
@@ -72,7 +72,7 @@ var/list/blacklist = list()
 			return 1
 		if(findtext(s,"[replacetext(lowertext(checkKey), " ", "")]"))
 			return 1
-	return 0
+	return 1
 
 /proc/is_key_blacklisted(var/checkKey)
 //	if(check_rights(R_ADMIN, 0))
