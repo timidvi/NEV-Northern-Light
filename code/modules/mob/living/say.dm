@@ -302,7 +302,7 @@ var/list/channel_to_radio_key = new
 		M.hear_say(message, verb, speaking, alt_name, italics, src, speech_sound, sound_vol, 1)
 
 	INVOKE_ASYNC(GLOBAL_PROC, PROC_REF(animate_speechbubble), speech_bubble, speech_bubble_recipients, 30)
-	INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, message, speaking, italics, speech_bubble_recipients, 40, verb)
+	//INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, message, speaking, italics, speech_bubble_recipients, 40, verb)
 	if(config.tts_enabled && !message_mode && (!client || !BITTEST(client.prefs.muted, MUTE_TTS)) && (tts_seed || ishuman(src)))
 		//TO DO: Remove need for that damn copypasta
 		var/seed = tts_seed
