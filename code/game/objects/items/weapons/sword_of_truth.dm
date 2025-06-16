@@ -138,6 +138,7 @@
 				if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 					to_chat(user, SPAN_NOTICE("You've unsecured the [src] assembly!"))
 					anchored = FALSE
+			return
 
 		if(ABORT_CHECK)
 			return
