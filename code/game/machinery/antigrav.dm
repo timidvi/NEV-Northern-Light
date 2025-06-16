@@ -73,29 +73,38 @@
 
 /obj/machinery/antigrav/attackby(var/obj/item/I, var/mob/user)
 	src.add_fingerprint(usr)
-	if (I.has_quality(QUALITY_BOLT_TURNING))
-		if (anchored)
-			if(!on)
-				to_chat(user, SPAN_NOTICE("You begin to unfasten \the [src] from the floor..."))
+//NEV edits to make this function with omni tools
+	var/list/usable_qualities = list(QUALITY_BOLT_TURNING)
+
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	switch(tool_type)
+		if(QUALITY_BOLT_TURNING)
+			if (anchored)
+				if(!on)
+					to_chat(user, SPAN_NOTICE("You begin to unfasten \the [src] from the floor..."))
+					if (I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB))
+						user.visible_message( \
+							SPAN_NOTICE("\The [user] unfastens \the [src]."), \
+							SPAN_NOTICE("You have unfastened \the [src]. Now it can be pulled somewhere else."), \
+							"You hear ratchet.")
+						src.anchored = FALSE
+				else
+					to_chat(user, SPAN_WARNING("Turn off \the [src] first."))
+			else
+				to_chat(user, SPAN_NOTICE("You begin to fasten \the [src] to the floor..."))
 				if (I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB))
 					user.visible_message( \
-						SPAN_NOTICE("\The [user] unfastens \the [src]."), \
-						SPAN_NOTICE("You have unfastened \the [src]. Now it can be pulled somewhere else."), \
+						SPAN_NOTICE("\The [user] fastens \the [src]."), \
+						SPAN_NOTICE("You have fastened \the [src]. Now it can counteract gravity."), \
 						"You hear ratchet.")
-					src.anchored = FALSE
-			else
-				to_chat(user, SPAN_WARNING("Turn off \the [src] first."))
-		else
-			to_chat(user, SPAN_NOTICE("You begin to fasten \the [src] to the floor..."))
-			if (I.use_tool(user, src, WORKTIME_NORMAL, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB))
-				user.visible_message( \
-					SPAN_NOTICE("\The [user] fastens \the [src]."), \
-					SPAN_NOTICE("You have fastened \the [src]. Now it can counteract gravity."), \
-					"You hear ratchet.")
-				src.anchored = TRUE
-		update_icon()
-	else
-		return ..()
+					src.anchored = TRUE
+			update_icon()
+			return
+
+		if(ABORT_CHECK)
+			return
+
+	return ..()
 
 
 /obj/machinery/antigrav/proc/start_anim()

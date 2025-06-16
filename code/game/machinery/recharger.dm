@@ -26,22 +26,32 @@
 		to_chat(user, "The charge meter reads [round(cell.percent())]%.")
 
 /obj/machinery/recharger/attackby(obj/item/I, mob/user)
-	if(default_deconstruction(I, user))
-		return
 
-	if(default_part_replacement(I, user))
-		return
+//NEV edits to make this function with omni tools
+	var/list/usable_qualities = list(QUALITY_BOLT_TURNING, QUALITY_SCREW_DRIVING, QUALITY_PRYING)
 
-	if(portable && I.has_quality(QUALITY_BOLT_TURNING))
-		if(charging)
-			to_chat(user, SPAN_WARNING("Remove [charging] first!"))
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	switch(tool_type)
+		if(QUALITY_BOLT_TURNING)
+			if(portable)
+				if(charging)
+					to_chat(user, SPAN_WARNING("Remove [charging] first!"))
+					return
+				anchored = !anchored
+				to_chat(user, "You [anchored ? "attached" : "detached"] [src].")
+				playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
+				return
+
+		if(QUALITY_SCREW_DRIVING)
+			default_deconstruction(I, user)
 			return
-		anchored = !anchored
-		to_chat(user, "You [anchored ? "attached" : "detached"] [src].")
-		playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
-		return
 
-	else if (istype(I, /obj/item/gripper))//Code for allowing cyborgs to use rechargers
+		if(QUALITY_PRYING)
+			default_deconstruction(I, user)
+			return
+
+
+	if (istype(I, /obj/item/gripper))//Code for allowing cyborgs to use rechargers
 		var/obj/item/gripper/Gri = I
 		if (charging)//If there's something in the charger
 			if (Gri.grip_item(charging, user))//we attempt to grab it
