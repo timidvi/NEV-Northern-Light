@@ -183,7 +183,9 @@ see multiz/movement.dm for some info.
 		// Handle people getting hurt, it's funny!
 		mover.fall_impact(src, below)
 
-
+		//NEV edit
+		if(!isobj(mover))
+			return //Things that are not objs dont stun folks
 
 		for(var/mob/living/M in below)
 			var/fall_damage = mover.get_fall_damage()
@@ -195,8 +197,9 @@ see multiz/movement.dm for some info.
 
 			if(M == mover)
 				continue
-			if(M.getarmor(BP_HEAD, ARMOR_MELEE) < fall_damage || ismob(mover))
-				M.Weaken(10)
+			//Armor + 5 so we dont get stunlocked by not waring a hat and someone throws like 1 bullet case at a time - NEV edit of course
+			if(M.getarmor(BP_HEAD, ARMOR_MELEE) + 5 < fall_damage || ismob(mover))
+				M.Weaken(clamp(1, 10, fall_damage - 5 -M.getarmor(BP_HEAD, ARMOR_MELEE)))
 			if(fall_damage >= FALL_GIB_DAMAGE)
 				M.gib()
 			else
