@@ -235,7 +235,7 @@
 /obj/machinery/autolathe/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
 	var/list/data = nano_ui_data(user, ui_key)
 
-	var/datum/asset/designIcons = get_asset_datum(/datum/asset/simple/design_icons)
+	var/datum/asset/designIcons = get_asset_datum(/datum/asset/spritesheet_batched/design_icons) //NEV edited
 	if (designIcons.send(user.client))
 		user.client.browse_queue_flush() // stall loading nanoui until assets actualy gets sent
 

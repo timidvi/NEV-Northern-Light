@@ -235,6 +235,10 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 
 	var/profiler_permission = R_DEBUG | R_SERVER
 
+	//These two are NEV edits
+	var/cache_assets = FALSE
+	var/smart_cache_assets = FALSE
+
 /datum/configuration/New()
 	fill_storyevents_list()
 
@@ -722,6 +726,13 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 
 				if("webhook_url")
 					config.webhook_url = value
+
+				//Start of NEV edits
+				if("cache_assets")
+					config.cache_assets = TRUE
+				if("smart_cache_assets")
+					config.smart_cache_assets = TRUE
+				//End of NEV edits
 
 				if("tts_key")
 					config.tts_key = value
