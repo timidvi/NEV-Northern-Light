@@ -112,6 +112,20 @@
 	. = ..()
 	gunshot_residue = null
 
+//NEV edit, allows for items hiden inside clothing to be seeable, shuch as shoe knifes and vest items
+/obj/item/clothing/proc/return_inv()
+	var/list/L = list()
+
+	L += src.contents
+
+	for(var/obj/item/storage/S in src)
+		L += S.return_inv()
+	for(var/obj/item/gift/G in src)
+		L += G.gift
+		if (istype(G.gift, /obj/item/storage))
+			L += G.gift:return_inv()
+	return L
+
 //Delayed equipping
 /obj/item/clothing/pre_equip(mob/user, slot)
 	..(user, slot)
