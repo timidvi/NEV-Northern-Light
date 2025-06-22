@@ -17,7 +17,7 @@
 	price_tag += rand(0,5000)
 
 /obj/structure/artwork_statue/attackby(obj/item/I, mob/living/user)
-//NEV edits to make this function with omni tools
+//eclipse edits to make this function with omni tools
 	var/list/usable_qualities = list(QUALITY_HAMMERING)
 
 	var/tool_type = I.get_tool_type(user, usable_qualities, src)

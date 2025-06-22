@@ -73,7 +73,7 @@
 
 /obj/machinery/antigrav/attackby(var/obj/item/I, var/mob/user)
 	src.add_fingerprint(usr)
-//NEV edits to make this function with omni tools
+//eclipse edits to make this function with omni tools
 	var/list/usable_qualities = list(QUALITY_BOLT_TURNING)
 
 	var/tool_type = I.get_tool_type(user, usable_qualities, src)

@@ -27,7 +27,7 @@
 
 /obj/machinery/recharger/attackby(obj/item/I, mob/user)
 
-//NEV edits to make this function with omni tools
+//eclipse edits to make this function with omni tools
 	var/list/usable_qualities = list(QUALITY_BOLT_TURNING, QUALITY_SCREW_DRIVING, QUALITY_PRYING)
 
 	var/tool_type = I.get_tool_type(user, usable_qualities, src)
