@@ -218,7 +218,7 @@
 		_temp_data = config.shieldgen_heat_scalar
 		shieldgen_heat_scalar = 1
 		spawn(0)
-			throw EXCEPTION("invalid configuration value: 'SHIELDGEN_HEAT_MULTIPLIER' requires a positive number as its value. Entry [_temp_data : "of [_temp_data]" : "of a non-number"] is not valid.")
+			throw EXCEPTION("invalid configuration value: 'SHIELDGEN_HEAT_MULTIPLIER' requires a positive number as its value. Entry [_temp_data ? "of [_temp_data]" : "of a non-number"] is not valid.")
 
 	if(_config_error)
 		spawn(25 SECONDS)
