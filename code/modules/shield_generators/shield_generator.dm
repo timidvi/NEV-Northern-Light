@@ -368,7 +368,7 @@
 
 	// // // BEGIN ECLIPSE EDITS // // //
 	// This is the part where we put out heat.
-	if(_safety)		//We still have our safety variable...
+	if(_safety && !config.shieldgen_disable_heat)		//We still have our safety variable...
 		var/transfer_moles = 0.79 * MOLES_CELLSTANDARD * 2		//I imagine the generator's gotta be lorg.
 		//Also, process only happens every 2 seconds, hence the *2 at the end there.
 		var/datum/gas_mixture/intake = environment.remove(transfer_moles)		//Sucked up by the intake...
@@ -388,7 +388,7 @@
 			var/normal_power_thermal_energy = (power_usage * (100-coefficient_of_performance) * (0.75 + (_working * 0.25)) * 0.25)
 			var/upkeep_power_thermal_energy = (upkeep_power_usage * (100-coefficient_of_performance) * 3)
 
-			intake.add_thermal_energy(normal_power_thermal_energy + upkeep_power_thermal_energy)
+			intake.add_thermal_energy((normal_power_thermal_energy + upkeep_power_thermal_energy) * config.shieldgen_heat_scalar) 
 			
 			egt = intake.temperature
 			//and now we exhaust the air back out.

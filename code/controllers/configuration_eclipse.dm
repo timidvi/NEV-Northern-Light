@@ -3,7 +3,7 @@
 // RSpitzer 2020-04-18
 //
 
-#define CURRENT_CONFIG_VERSION 9
+#define CURRENT_CONFIG_VERSION 10
 
 /datum/configuration
 //For things that require delaying until the config loads for things (e.g. the
@@ -53,6 +53,10 @@
 	var/ntdad_level8_ping_sec = FALSE
 	var/ntdad_level8_ping_all = FALSE
 	var/ntdad_periodic_ongoing_round_pings = FALSE
+	
+// Shield generator
+	var/shieldgen_disable_heat = FALSE
+	var/shieldgen_heat_scalar = 1
 	
 // Miscellany.
 	var/generate_ghost_icons = FALSE		//Should we generate ghost icons?
@@ -160,7 +164,11 @@
 			if("ship_name")
 				station_name = value
 			if("vermin_limiter")
-				config.maximum_vermin = value
+				config.maximum_vermin = text2num(value)
+			if("disable_shieldgen_heat_generation")
+				config.shieldgen_disable_heat = TRUE
+			if("shieldgen_heat_multiplier")
+				config.shieldgen_heat_scalar = text2num(value)
 
 //Version check, warns if the configuration file is updated and the sysop hasn't updated their copy.
 	if(!config.eclipse_config_version)
@@ -204,6 +212,13 @@
 		config.maximum_vermin = 250		//A low number, just in case.
 		spawn(0)
 			throw EXCEPTION("invalid configuration value: 'VERMIN_LIMITER' requires a positive number or zero as its value. Entry [_temp_data ? "of [_temp_data]" : "of a non-number"] is not valid.")
+	
+	if(!isnum(config.shieldgen_heat_scalar) || config.shieldgen_heat_scalar <= 0)
+		_config_error = TRUE
+		_temp_data = config.shieldgen_heat_scalar
+		shieldgen_heat_scalar = 1
+		spawn(0)
+			throw EXCEPTION("invalid configuration value: 'SHIELDGEN_HEAT_MULTIPLIER' requires a positive number as its value. Entry [_temp_data : "of [_temp_data]" : "of a non-number"] is not valid.")
 
 	if(_config_error)
 		spawn(25 SECONDS)
