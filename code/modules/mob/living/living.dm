@@ -354,8 +354,17 @@ default behaviour is:
 			if(istype(D.wrapped, /obj/item/storage)) //this should never happen
 				L += get_contents(D.wrapped)
 
-		for(var/obj/item/clothing/C in Storage.return_inv())//Check for pockets and shoe knifes
-			L += get_contents(C)
+		// Eclipse edits
+		for(var/obj/item/clothing/R in Storage.return_inv())//Check for pockets and shoe knifes
+			L += get_contents(R)
+
+		for(var/obj/item/rig/R in Storage.return_inv()) //Check for rig modules basically
+			L += get_contents(R)
+
+		for(var/obj/item/rig_module/RM in Storage.return_inv()) //Check stuff in rig storage
+			L += RM.get_contents(RM)
+
+		// End of Eclipse edit
 
 		return L
 
@@ -375,9 +384,17 @@ default behaviour is:
 			if(istype(D.wrapped, /obj/item/storage)) //this should never happen
 				L += get_contents(D.wrapped)
 
+		// Eclipse edits
 		for(var/obj/item/clothing/C in src.contents)	//Check for pockets and shoe knifes
 			L += get_contents(C)
 
+		for(var/obj/item/rig/R in src.contents) //Check for rig modules basically
+			L += get_contents(R)
+
+		for(var/obj/item/rig_module/RM in src.contents) //Check stuff in rig storage
+			L += get_contents(RM)
+
+		//End of Eclipse edit
 		return L
 
 /mob/living/proc/check_contents_for(A)

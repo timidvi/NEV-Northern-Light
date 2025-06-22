@@ -59,7 +59,7 @@
 
 	var/list/stat_rig_module/stat_modules = new()
 
-	
+
 
 /obj/item/rig_module/get_cell()
 	holder = get_rig()
@@ -374,3 +374,22 @@
 		name = "[charge.display_name] ([charge.charges]C) - Change"
 		return 1
 	return 0
+
+//eclipse edit, allows for items hiden inside rig modules to be seeable, shuch as in storage units
+/obj/item/rig_module/proc/return_inv()
+	var/list/L = list()
+
+	L += src.contents
+
+	for(var/obj/item/storage/S in src)
+		L += S.return_inv()
+	for(var/obj/item/gift/G in src)
+		L += G.gift
+		if (istype(G.gift, /obj/item/storage))
+			L += G.gift:return_inv()
+	//If somehow we have nested storage
+	for(var/obj/item/rig_module/RM in src)
+		L += RM.return_inv()
+
+	return L
+//End of Eclipse edit

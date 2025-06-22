@@ -112,7 +112,7 @@
 	. = ..()
 	gunshot_residue = null
 
-//NEV edit, allows for items hiden inside clothing to be seeable, shuch as shoe knifes and vest items
+//eclipse edit, allows for items hiden inside clothing to be seeable, shuch as shoe knifes and vest items
 /obj/item/clothing/proc/return_inv()
 	var/list/L = list()
 
@@ -124,7 +124,10 @@
 		L += G.gift
 		if (istype(G.gift, /obj/item/storage))
 			L += G.gift:return_inv()
+	for(var/obj/item/rig_module/RM in src)
+		L += RM.return_inv()
 	return L
+//End of eclipse edit
 
 //Delayed equipping
 /obj/item/clothing/pre_equip(mob/user, slot)
