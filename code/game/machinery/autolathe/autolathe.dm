@@ -586,7 +586,7 @@
 					if(stack.get_amount() < 1) //This stops users from putting in only half of a material.
 						to_chat(user, SPAN_NOTICE("\The [src] only takes full sheets of materials!"))
 						return
-					total_material *= stack.get_amount()
+					total_material = stack.get_amount()
 
 				if(stored_material[material] + total_material > storage_capacity)
 					total_material = storage_capacity - stored_material[material]
