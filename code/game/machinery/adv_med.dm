@@ -322,15 +322,15 @@
 				if(I.rejecting)
 					internal_wounds += "being rejected"
 
-					var/list/internal_wound_comps = I.GetComponents(/datum/component/internal_wound)
+				var/list/internal_wound_comps = I.GetComponents(/datum/component/internal_wound)
 
-					for(var/datum/component/internal_wound/IW in internal_wound_comps)
-						var/severity = IW.severity
-						internal_wounds += "[IW.name] ([severity]/[IW.severity_max])"
-						if(istype(IW, /datum/component/internal_wound/organic/burn) || istype(IW, /datum/component/internal_wound/robotic/emp_burn))
-							total_burn_damage += severity
-						else
-							total_brute_and_misc_damage += severity
+				for(var/datum/component/internal_wound/IW in internal_wound_comps)
+					var/severity = IW.severity
+					internal_wounds += "[IW.name] ([severity]/[IW.severity_max])"
+					if(istype(IW, /datum/component/internal_wound/organic/burn) || istype(IW, /datum/component/internal_wound/robotic/emp_burn))
+						total_burn_damage += severity
+					else
+						total_brute_and_misc_damage += severity
 
 			// Format internal wounds
 			var/internal_wounds_details
