@@ -299,6 +299,14 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 8 SECONDS
 
+/datum/nt_blueprint/machinery/bioreactor_unloader
+	name = "Biomatter Reactor: Unloader" //Basically a hopper
+	build_path = /obj/machinery/multistructure/bioreactor_part/unloader
+	materials = list(
+		/obj/item/stack/material/steel = 10
+	)
+	build_time = 2 SECONDS
+
 /datum/nt_blueprint/machinery/bioreactor_metrics
 	name = "Biomatter Reactor: Metrics"
 	build_path = /obj/machinery/multistructure/bioreactor_part/console
@@ -309,6 +317,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/cable_coil = 30 //! TODO: proper recipe
 	)
 	build_time = 7 SECONDS
+
 /datum/nt_blueprint/machinery/bioreactor_port
 	name = "Biomatter Reactor: Port"
 	build_path = /obj/machinery/multistructure/bioreactor_part/bioport
@@ -317,29 +326,23 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/reagent_containers/glass/bucket = 1
 	)
 	build_time = 6 SECONDS
-/datum/nt_blueprint/machinery/bioreactor_biotank
-	name = "Biomatter Reactor: Tank"
-	build_path = /obj/machinery/multistructure/bioreactor_part/biotank_platform
-	materials = list(
-		/obj/item/stack/material/plastic = 10,
-		/obj/item/stack/material/steel = 20,
-		/obj/structure/reagent_dispensers/biomatter/large = 1
-	)
-	build_time = 6 SECONDS
-/datum/nt_blueprint/machinery/bioreactor_unloader
-	name = "Biomatter Reactor: Unloader"
-	build_path = /obj/machinery/multistructure/bioreactor_part/unloader
-	materials = list(
-		/obj/item/stack/material/plastic = 10,
-		/obj/item/stack/rods = 5,
-		/obj/structure/reagent_dispensers/biomatter = 1
-	)
-	build_time = 8 SECONDS
-/datum/nt_blueprint/machinery/bioreactor_platform
-	name = "Biomatter Reactor: Platform"
+
+
+/datum/nt_blueprint/machinery/platform
+	name = "Biomatter Reactor: Bioreactor Platform"
 	build_path = /obj/machinery/multistructure/bioreactor_part/platform
 	materials = list(
 		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/rods = 2
+	)
+	build_time = 8 SECONDS
+
+/datum/nt_blueprint/machinery/bioreactor_platform
+	name = "Biomatter Reactor: Biomatter Canister Platform"
+	build_path = /obj/machinery/multistructure/bioreactor_part/biotank_platform
+	materials = list(
+		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/material/plastic = 4,
 		/obj/item/stack/tile/floor = 1
 	)
 	build_time = 8 SECONDS

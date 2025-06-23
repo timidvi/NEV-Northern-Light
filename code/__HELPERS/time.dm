@@ -104,7 +104,7 @@ var/global/rollovercheck_last_timeofday = 0
 	return midnight_rollovers
 
 
-//Increases delay as the server gets more overloaded,
+/* Increases delay as the server gets more overloaded, < - - See stoplag.dm NEV edit to override this
 //as sleeps aren't cheap and sleeping only to wake up and sleep again is wasteful
 #define DELTA_CALC max(((max(world.tick_usage, world.cpu) / 100) * max(Master.sleep_delta,1)), 1)
 #define UNTIL(X) while(!X) stoplag()
@@ -122,3 +122,4 @@ var/global/rollovercheck_last_timeofday = 0
 	while (world.tick_usage > min(TICK_LIMIT_TO_RUN, Master.current_ticklimit))
 
 #undef DELTA_CALC
+*/

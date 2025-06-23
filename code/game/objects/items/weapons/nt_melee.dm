@@ -195,12 +195,20 @@
 
 /obj/item/tool/sword/nt/spear/attackby(obj/item/I, var/mob/user)
 	..()
-	if (I.has_quality(QUALITY_HAMMERING))
-		if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_HAMMERING, FAILCHANCE_EASY, STAT_MEC))
-			to_chat(user, SPAN_NOTICE("You repair the damaged spear-tip."))
-			tipbroken = FALSE
-			force = initial(force)
-			throwforce = initial(throwforce)
+//eclipse edits to make this function with omni tools
+	var/list/usable_qualities = list(QUALITY_HAMMERING)
+
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	switch(tool_type)
+		if(QUALITY_HAMMERING)
+			if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_HAMMERING, FAILCHANCE_EASY, STAT_MEC))
+				to_chat(user, SPAN_NOTICE("You repair the damaged spear-tip."))
+				tipbroken = FALSE
+				force = initial(force)
+				throwforce = initial(throwforce)
+
+		if(ABORT_CHECK)
+			return
 
 /obj/item/shield/riot/nt
 	name = "\improper Scutum of the Mekhane"

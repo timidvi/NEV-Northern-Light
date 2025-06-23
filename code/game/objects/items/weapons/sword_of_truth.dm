@@ -124,15 +124,25 @@
 	update_icon()
 
 /obj/structure/nt_pedestal/attackby(obj/item/I, mob/user)
-	if(I.has_quality(QUALITY_BOLT_TURNING))
-		if(!anchored)
-			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
-				to_chat(user, SPAN_NOTICE("You've secured the [src] assembly!"))
-				anchored = TRUE
-		else if(anchored)
-			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
-				to_chat(user, SPAN_NOTICE("You've unsecured the [src] assembly!"))
-				anchored = FALSE
+//eclipse edits to make this function with omni tools
+	var/list/usable_qualities = list(QUALITY_HAMMERING)
+
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	switch(tool_type)
+		if(QUALITY_BOLT_TURNING)
+			if(!anchored)
+				if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
+					to_chat(user, SPAN_NOTICE("You've secured the [src] assembly!"))
+					anchored = TRUE
+			else if(anchored)
+				if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
+					to_chat(user, SPAN_NOTICE("You've unsecured the [src] assembly!"))
+					anchored = FALSE
+			return
+
+		if(ABORT_CHECK)
+			return
+
 	if(istype(I, /obj/item/tool/sword/nt_sword))
 		if(sword)
 			to_chat(user, SPAN_WARNING("[src] already has a sword in it!"))
