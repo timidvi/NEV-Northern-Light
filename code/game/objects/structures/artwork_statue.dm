@@ -17,11 +17,20 @@
 	price_tag += rand(0,5000)
 
 /obj/structure/artwork_statue/attackby(obj/item/I, mob/living/user)
-	if(I.has_quality(QUALITY_BOLT_TURNING))
-		if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_BOLT_TURNING, FAILCHANCE_EASY, STAT_MEC))
-			user.visible_message(SPAN_WARNING("[user] has [anchored ? "un" : ""]secured \the [src]."), SPAN_NOTICE("You [anchored ? "un" : ""]secure \the [src]."))
-			set_anchored(!anchored)
-		return
+//eclipse edits to make this function with omni tools
+	var/list/usable_qualities = list(QUALITY_HAMMERING)
+
+	var/tool_type = I.get_tool_type(user, usable_qualities, src)
+	switch(tool_type)
+		if(QUALITY_BOLT_TURNING)
+			if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_BOLT_TURNING, FAILCHANCE_EASY, STAT_MEC))
+				user.visible_message(SPAN_WARNING("[user] has [anchored ? "un" : ""]secured \the [src]."), SPAN_NOTICE("You [anchored ? "un" : ""]secure \the [src]."))
+				set_anchored(!anchored)
+			return
+
+		if(ABORT_CHECK)
+			return
+
 	. = ..()
 
 /obj/structure/artwork_statue/get_item_cost(export)
