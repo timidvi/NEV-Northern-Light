@@ -86624,7 +86624,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/engineering/shield_generator)
 "dPF" = (
-/obj/machinery/alarm/nobreach{
+/obj/machinery/alarm/monitor{
 	dir = 4;
 	pixel_x = -24
 	},
