@@ -86580,7 +86580,10 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/engineering/shield_generator)
 "dPz" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/yellow,
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+	dir = 1;
+	tag = "icon-map (NORTH)"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/engineering/shield_generator)
 "dPA" = (
@@ -86589,9 +86592,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/yellow{
-	dir = 4;
-	tag = "icon-intact (EAST)"
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/eris/engineering/shield_generator)
@@ -86616,9 +86618,8 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/eris/engineering/engine_room)
 "dPE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/yellow{
-	dir = 10;
-	tag = "icon-intact (NORTHWEST)"
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/engineering/shield_generator)
@@ -102636,6 +102637,10 @@
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section3deck1central)
 "ezX" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+	dir = 1;
+	tag = "icon-map (NORTH)"
+	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/eris/engineering/shield_generator)
 "ezY" = (
@@ -106231,7 +106236,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/space)
+/area/eris/engineering/shield_generator)
 "fBx" = (
 /obj/machinery/holomap{
 	dir = 4;
@@ -106604,7 +106609,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "hcV" = (
 /obj/structure/bed/chair/comfy/beige,
 /obj/machinery/light{
@@ -106939,7 +106944,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "iqV" = (
 /obj/structure/lattice,
 /turf/simulated/floor/hull,
@@ -107306,7 +107311,7 @@
 	pixel_x = 25
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "jIq" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -107535,7 +107540,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "kHZ" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/wall,
@@ -107671,9 +107676,8 @@
 	name = "Shield Generator Screen"
 	},
 /obj/effect/window_lwall_spawn/smartspawn,
-/obj/machinery/atmospherics/pipe/simple/hidden/yellow{
-	dir = 4;
-	tag = "icon-intact (EAST)"
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/eris/engineering/shield_generator)
@@ -108256,7 +108260,7 @@
 "mJb" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible/yellow,
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "mKR" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -108294,7 +108298,7 @@
 "mUg" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow,
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "mUB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -108454,11 +108458,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "nEM" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "nFL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -108665,6 +108669,12 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/eris/maintenance/section3deck5starboard)
+"oju" = (
+/obj/machinery/atmospherics/unary/freezer{
+	icon_state = "freezer"
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/eris/engineering/shield_generator)
 "onI" = (
 /obj/item/stool/padded,
 /turf/simulated/floor/tiled/steel,
@@ -108695,7 +108705,7 @@
 /obj/item/cell/large/high,
 /obj/item/cell/large/high,
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "orW" = (
 /obj/spawner/scrap,
 /turf/simulated/shuttle/floor{
@@ -109042,7 +109052,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "pto" = (
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/reinforced/polarized,
@@ -109179,7 +109189,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "pWC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/bed/chair/wood{
@@ -109253,7 +109263,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "qnS" = (
 /obj/structure/closet/wall_mounted/firecloset{
 	pixel_x = -32
@@ -109325,13 +109335,13 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "qzr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "qBj" = (
 /turf/simulated/floor/wood,
 /area/eris/crew_quarters/hydroponics)
@@ -109356,8 +109366,11 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/eris/quartermaster/hangarsupply)
 "qKd" = (
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "qOD" = (
 /obj/structure/showcase{
 	desc = "Ancient robotic frame, that is long deactivated and rusted solid. However, it still strikes am awesome pose, that somehow makes you think of justice and righteousness.";
@@ -109398,7 +109411,7 @@
 	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
-/area/space)
+/area/eris/engineering/shield_generator)
 "qUV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -110049,7 +110062,7 @@
 /area/eris/crew_quarters/bar)
 "sWq" = (
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "sXb" = (
 /obj/effect/floor_decal/industrial/outline/blue,
 /obj/structure/railing/grey{
@@ -110084,13 +110097,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/eris/security/warden)
 "tcl" = (
-/obj/machinery/door/blast/regular{
-	id = "shieldroom";
-	name = "Shield Generator Screen"
-	},
-/obj/effect/window_lwall_spawn/smartspawn,
-/obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/plating,
+/obj/machinery/constructable_frame/machine_frame,
+/turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/engineering/shield_generator)
 "tdm" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
@@ -110919,7 +110927,7 @@
 	tag = "icon-intact (NORTHEAST)"
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "wgR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -110973,7 +110981,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "wns" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -111030,7 +111038,7 @@
 "wrg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/steel/techfloor,
-/area/space)
+/area/eris/engineering/shield_generator)
 "wui" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -294396,10 +294404,10 @@ dJh
 bBH
 dXi
 abF
-aae
+dKs
 fAw
-aae
-aae
+dKs
+dKs
 eAj
 eAj
 eAK
@@ -294598,8 +294606,8 @@ evG
 cNH
 dXi
 abF
-aae
-qKd
+dKs
+dPw
 qyL
 qUu
 iqG
@@ -294800,8 +294808,8 @@ cNH
 cNH
 dXi
 abF
-aae
-qKd
+dKs
+dPw
 sWq
 sWq
 gYO
@@ -295002,8 +295010,8 @@ cNH
 eBh
 dXi
 abF
-aae
-qKd
+dKs
+dPw
 sWq
 pVd
 pqK
@@ -295204,7 +295212,7 @@ cNH
 dXi
 dXi
 abF
-aae
+dKs
 qKd
 nEM
 qzr
@@ -295406,8 +295414,8 @@ cNH
 dXi
 abF
 abF
-aae
-qKd
+dKs
+tcl
 wfo
 wrg
 wmX
@@ -295608,8 +295616,8 @@ aNe
 dXi
 abF
 abF
-aae
-qKd
+dKs
+oju
 mJb
 qns
 nBj
@@ -295810,8 +295818,8 @@ cNH
 dXi
 abF
 abF
-aae
-qKd
+dKs
+oju
 mUg
 jHS
 ory
@@ -296013,7 +296021,7 @@ dXi
 abF
 abF
 dKs
-tcl
+ddZ
 lfN
 dKs
 dKs
