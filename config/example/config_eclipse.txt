@@ -1,7 +1,7 @@
 # Eclipse-specific configurations, for downstream servers and dev environments.
 
 ## Configuration file version.
-CONFIG_FILE_VERSION 9
+CONFIG_FILE_VERSION 10
 
 #########
 # JOB WHITELISTING
@@ -157,6 +157,22 @@ DISPATCHER_MINIMUM_ONGOING_ROUND 5
 ## Uncomment to enable.
 ## WARNING: This option is mutually exclusive with the option immediately above.
 # DISPATCHER_MESSAGES_ALL_ON_HIVEMIND
+
+##########
+# SHIELD GENERATORS
+##########
+
+## HEAT GENERATION MASTER DISABLE
+## Do we need to disable heat generation on the ship's shields?
+## Uncomment to disable.
+# DISABLE_SHIELDGEN_HEAT_GENERATION
+
+## HEAT GENERATION SCALAR
+## How much heat should the shield generator put out? This is a flat multiplier
+## to the amount of "heat energy" that is added, and should be adjusted with
+## great care. A value of 2 is 200%, a value of 0.5 is 50%, and so forth.
+## Default: 1
+SHIELDGEN_HEAT_MULTIPLIER 1
 
 ##########
 # MISCELLANY
