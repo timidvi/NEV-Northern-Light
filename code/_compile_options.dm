@@ -66,6 +66,14 @@
 #error Please consider downgrading to 514.1575 or lower.
 #endif
 
+// // // BEGIN ECLIPSE EDITS // // //
+// Addresses a known issue when trying to compile on 515.
+#if DM_VERSION == 515
+#warn BYOND version 515 has a known issue where datums with no parent cannot call a New() proc.
+#warn If you encounter compiler failures, consider downgrading your dev environment to 514. A known good version is 514.1589.
+#endif
+// // // END ECLIPSE EDITS // // //
+
 //Additional code for the above flags.
 #ifdef TESTING
 #warn compiling in TESTING mode. testing() debug messages will be visible.
