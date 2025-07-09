@@ -69,7 +69,7 @@
 // // // BEGIN ECLIPSE EDITS // // //
 // Addresses a known issue when trying to compile on 515.
 #if DM_VERSION == 515
-#warn BYOND version 515 has a known issue where datums with no parent cannot call a New() proc.
+#warn BYOND version 515 has a known issue where datums with no parent cannot call a New() proc under certain circumstances.
 #warn If you encounter compiler failures, consider downgrading your dev environment to 514. A known good version is 514.1589.
 #endif
 // // // END ECLIPSE EDITS // // //
