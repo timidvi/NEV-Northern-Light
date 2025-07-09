@@ -4,24 +4,25 @@
 # In the event that multiple org members are to be informed of changes
 # to the same file or dir, add them to the end under Multiple Owners.
 
-# DrExample / Nestor
+# MciReloaded / Mci
+#Previously: DrExample / Nestor
 ###############
 
-/.github/ @DrExample
-/code/controllers/ @DrExample
-/code/game/gamemodes/ @DrExample
-/code/unit_tests/ @DrExample
-/code/world.dm @DrExample
-/code/hub.dm @DrExample
-/.gitattributes @DrExample
-/.gitconfig @DrExample
-/.gitignore @DrExample
-/.travis.yml @DrExample
-/libbyond-extools.so @DrExample
-/schema.sql @DrExample
-maps/CEVEris/ @DrExample
-maps/submaps/ @DrExample
-*.dmm @DrExample
-/code/controllers/configuration_eclipse.dm @DrExample
-/code/controllers/failsafe.dm @DrExample
-/code/controllers/master.dm @DrExample
+/.github/ @MciReloaded
+/code/controllers/ @MciReloaded
+/code/game/gamemodes/ @MciReloaded
+/code/unit_tests/ @MciReloaded
+/code/world.dm @MciReloaded
+/code/hub.dm @MciReloaded
+/.gitattributes @MciReloaded
+/.gitconfig @MciReloaded
+/.gitignore @MciReloaded
+/.travis.yml @MciReloaded
+/libbyond-extools.so @MciReloaded
+/schema.sql @MciReloaded
+maps/CEVEris/ @MciReloaded
+maps/submaps/ @MciReloaded
+*.dmm @MciReloaded
+/code/controllers/configuration_eclipse.dm @MciReloaded
+/code/controllers/failsafe.dm @MciReloaded
+/code/controllers/master.dm @MciReloaded
