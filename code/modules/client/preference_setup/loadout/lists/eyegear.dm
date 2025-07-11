@@ -91,3 +91,5 @@
 	display_name = "welding goggles"
 	path = /obj/item/clothing/glasses/welding
 	cost = 2
+
+//Eclipse Edit Begins - world code port

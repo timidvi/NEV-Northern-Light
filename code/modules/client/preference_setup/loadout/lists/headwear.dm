@@ -292,4 +292,81 @@
 /datum/gear/head/hijab
 	display_name = "hijab"
 	path = /obj/item/clothing/head/hijab
+
+//Eclipse Edit Continues - world code port
+/datum/gear/head/worldport/wizard
+	display_name = "wizard hat selection"
+	path = /obj/item/clothing/head/worldport/magic
+	slot = slot_head
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/head/worldport/main
+	display_name = "maid headdress"
+	path = /obj/item/clothing/head/worldport/maid
+	slot = slot_head
+
+/datum/gear/head/worldport/circlet
+	display_name = "wood circlet"
+	path = /obj/item/clothing/head/worldport/circlet
+	slot = slot_head
+
+/datum/gear/head/worldport/headdress
+	display_name = "black and gold headdress"
+	path = /obj/item/clothing/head/worldport/headdress
+	slot = slot_head
+
+/datum/gear/head/worldport/crown
+	display_name = "crown selection"
+	path = /obj/item/clothing/head/worldport/crown
+	slot = slot_head
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/head/worldport/flowercrown
+	display_name = "flower crown selection"
+	path = /obj/item/clothing/head/worldport/flowercrown
+	slot = slot_head
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/head/worldport/hat
+	display_name = "expanded hat selection"
+	path = /obj/item/clothing/head/worldport/hat
+	slot = slot_head
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/head/worldport/polychrome/maang
+	display_name = "polychrome maang tikka"
+	path = /obj/item/clothing/head/worldport/polychrome/maang
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/head/worldport/polychrome/maid
+	display_name = "polychrome maid headdress"
+	path = /obj/item/clothing/head/worldport/maid
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/head/worldport/religious/hijab
+	display_name = "polychrome classic hijab"
+	path = /obj/item/clothing/head/worldport/religious/hijab
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/head/worldport/religious/kippa
+	display_name = "polychrome kippa"
+	path = /obj/item/clothing/head/worldport/religious/kippa
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/head/worldport/religious/taqiyah
+	display_name = "polychrome taqiyah"
+	path = /obj/item/clothing/head/worldport/religious/taqiyah
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/head/worldport/religious/turban
+	display_name = "polychrome turban"
+	path = /obj/item/clothing/head/worldport/religious/turban
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.

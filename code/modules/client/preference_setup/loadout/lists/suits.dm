@@ -171,4 +171,150 @@
 	display_name = "office blazer"
 	path = /obj/item/clothing/suit/storage/office_blazer
 	cost = 1
+
+//Eclipse Edit Continues - world code port
+/datum/gear/suit/worldport/magic
+	display_name = "wizard robe selection"
+	path = /obj/item/clothing/suit/worldport/magic
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/kurta
+	display_name = "kurta selection"
+	path = /obj/item/clothing/suit/worldport/kurta
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/ascetic
+	display_name = "ascetic robe"
+	path = /obj/item/clothing/suit/worldport/ascetic
+	slot = slot_wear_suit
+
+/datum/gear/suit/worldport/purity
+	display_name = "purity robe"
+	path = /obj/item/clothing/suit/worldport/purity
+	slot = slot_wear_suit
+
+/datum/gear/suit/worldport/hoodie
+	display_name = "hoodie selection"
+	path = /obj/item/clothing/suit/worldport/hoodie
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/varsity
+	display_name = "varsity jacket selection"
+	path = /obj/item/clothing/suit/worldport/varsity
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/cardigan
+	display_name = "cardigan selection"
+	path = /obj/item/clothing/suit/worldport/cardigan
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/sailor
+	display_name = "sailor top"
+	path = /obj/item/clothing/suit/worldport/sailor
+	slot = slot_wear_suit
+
+/datum/gear/suit/worldport/gothic
+	display_name = "gothic dress"
+	path = /obj/item/clothing/suit/worldport/gothic
+	slot = slot_wear_suit
+
+/datum/gear/suit/worldport/dress
+	display_name = "flowing dress selection"
+	path = /obj/item/clothing/suit/worldport/dress
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/negligee
+	display_name = "negligee selection"
+	path = /obj/item/clothing/suit/worldport/negligee
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/suit
+	display_name = "suit jacket selection"
+	path = /obj/item/clothing/suit/worldport/suit
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/jacket
+	display_name = "jacket selection"
+	path = /obj/item/clothing/suit/worldport/jacket
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/track
+	display_name = "track jacket selection"
+	path = /obj/item/clothing/suit/worldport/track
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/flannel
+	display_name = "flannel selection"
+	path = /obj/item/clothing/suit/worldport/flannel
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/overalls
+	display_name = "overalls"
+	path = /obj/item/clothing/suit/worldport/overalls
+	slot = slot_wear_suit
+
+/datum/gear/suit/worldport/kamishimo
+	display_name = "kamishimo"
+	path = /obj/item/clothing/suit/worldport/kamishimo
+	slot = slot_wear_suit
+
+/datum/gear/suit/worldport/kimono
+	display_name = "kimono selection"
+	path = /obj/item/clothing/suit/worldport/kimono
+	slot = slot_wear_suit
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/worldport/polychrome/purity
+	display_name = "polychrome purity robe"
+	path = /obj/item/clothing/suit/worldport/polychrome/purity
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/worldport/polychrome/kurta
+	display_name = "polychrome kurta"
+	path = /obj/item/clothing/suit/worldport/polychrome/kurta
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/worldport/polychrome/kurta/fancy
+	display_name = "polychrome fancy kurta"
+	path = /obj/item/clothing/suit/worldport/polychrome/kurta/fancy
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/worldport/polychrome/kimono
+	display_name = "polychrome kimono"
+	path = /obj/item/clothing/suit/worldport/polychrome/kimono
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/worldport/polychrome/track
+	display_name = "polychrome track jacket"
+	path = /obj/item/clothing/suit/worldport/polychrome/track
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/worldport/polychrome/jacket/pea
+	display_name = "polychrome peacoat"
+	path = /obj/item/clothing/suit/worldport/polychrome/jacket/pea
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/worldport/polychrome/dress
+	display_name = "polychrome flowing dress"
+	path = /obj/item/clothing/suit/worldport/polychrome/dress
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.
