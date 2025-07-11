@@ -93,6 +93,18 @@
 		data["power_usage"] = round(gen.power_usage / 1000)
 		data["offline_for"] = gen.offline_for * 2
 		data["shutdown"] = gen.emergency_shutdown
+	
+		// // // BEGIN ECLIPSE EDITS // // //
+		// Monitoring.
+		data["temp_internal"] = gen.itt
+		data["temp_exhaust"] = gen.egt
+		
+		//Thresholds, used in annunciator panel and bar colouring.
+		data["thr_cold"] = gen.threshold_cold
+		data["thr_norm"] = gen.threshold_normal
+		data["thr_crit"] = gen.threshold_critical
+		data["thr_htco"] = gen.threshold_high_temperature_cutout
+		// // // END ECLIPSE EDITS // // //
 	else
 		data["nogen"] = TRUE //Special flag so the template can tell between console and physical
 
