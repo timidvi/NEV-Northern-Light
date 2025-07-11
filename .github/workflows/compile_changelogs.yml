@@ -18,7 +18,7 @@ jobs:
           unset SECRET_EXISTS
           if [ -n "$ENABLER_SECRET" ]; then SECRET_EXISTS=true ; fi
           echo "Secret exists: $SECRET_EXISTS"
-          echo "SECRETS_ENABLED=$SECRET_EXISTS" >> "$GITHUB_OUTPUT"
+          echo "ACTIONS_ENABLED=$SECRET_EXISTS" >> "$GITHUB_OUTPUT"
       - name: "Setup python"
         if: steps.value_holder.outputs.ACTIONS_ENABLED
         uses: actions/setup-python@v1
