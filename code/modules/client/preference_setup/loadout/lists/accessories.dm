@@ -203,4 +203,66 @@
 	path = /obj/item/clothing/accessory/collar_industrial
 	cost = 3
 
-//Eclipse Edit Ends - Adding in new custom commissioned clothes.
+//Eclipse Edit Continues - Adding in ported clothes
+
+/datum/gear/accessory/worldport/cloak
+	display_name = "expanded poncho selection"
+	path = /obj/item/clothing/accessory/worldport/cloak
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/jacketacc
+	display_name = "suit jacket selection"
+	path = /obj/item/clothing/accessory/worldport/jacketacc
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/asym
+	display_name = "asymmetrical selection"
+	path = /obj/item/clothing/accessory/worldport/asym
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/hawaiian
+	display_name = "hawaiian shirt selection"
+	path = /obj/item/clothing/accessory/worldport/hawaiian
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/vest
+	display_name = "sweater vest selection"
+	path = /obj/item/clothing/accessory/worldport/vest
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/waist
+	display_name = "waistcoat selection"
+	path = /obj/item/clothing/accessory/worldport/waist
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/cowboy
+	display_name = "cowboy vest selection"
+	path = /obj/item/clothing/accessory/worldport/waist
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/chaps
+	display_name = "cowboy vest selection"
+	path = /obj/item/clothing/accessory/worldport/chaps
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/sweater
+	display_name = "sweater selection"
+	path = /obj/item/clothing/accessory/worldport/sweater
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/accessory/worldport/turtle
+	display_name = "turtleneck selection"
+	path = /obj/item/clothing/accessory/worldport/turtle
+	slot = slot_accessory_buffer
+	flags = GEAR_HAS_TYPE_SELECTION
+
+//Eclipse Edit Ends - Adding in new custom commissioned clothes, ported clothes.

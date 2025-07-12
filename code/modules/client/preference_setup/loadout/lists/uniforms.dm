@@ -360,4 +360,259 @@
 	display_name = "kimono"
 	path = /obj/item/clothing/under/kimono
 
+//Eclipse Edit Continues - world port code
+/datum/gear/uniform/worldport/outfit
+	display_name = "expanded outfit selection"
+	path = /obj/item/clothing/uniform/worldport/outfit
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/dress
+	display_name = "expanded dress selection"
+	path = /obj/item/clothing/uniform/worldport/dress
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/maxi
+	display_name = "maxi dress selection"
+	path = /obj/item/clothing/uniform/worldport/maxi
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/sun
+	display_name = "sundress selection"
+	path = /obj/item/clothing/uniform/worldport/sun
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/dance
+	display_name = "dance dress selection"
+	path = /obj/item/clothing/uniform/worldport/dance
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/maid
+	display_name = "maid dress selection"
+	path = /obj/item/clothing/uniform/worldport/maid
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/dance
+	display_name = "dance dress selection"
+	path = /obj/item/clothing/uniform/worldport/dance
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/gown
+	display_name = "gown selection"
+	path = /obj/item/clothing/uniform/worldport/gown
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/ethnic/sari
+	display_name = "sari selection"
+	path = /obj/item/clothing/uniform/worldport/ethnic/sari
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/ethnic/cheongsam
+	display_name = "cheongsam selection"
+	path = /obj/item/clothing/uniform/worldport/ethnic/cheongsam
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/tavern
+	display_name = "tavern-wear selection"
+	path = /obj/item/clothing/uniform/worldport/tavern
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/crop
+	display_name = "crop top selection"
+	path = /obj/item/clothing/uniform/worldport/crop
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/stripper
+	display_name = "stripper selection"
+	path = /obj/item/clothing/uniform/worldport/stripper
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 3
+
+/datum/gear/uniform/worldport/swim
+	display_name = "swimsuit selection"
+	path = /obj/item/clothing/uniform/worldport/swim
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 2
+
+/datum/gear/uniform/worldport/cheer
+	display_name = "cheerleader outfit selection"
+	path = /obj/item/clothing/uniform/worldport/cheer
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/nurse
+	display_name = "nurse dress selection"
+	path = /obj/item/clothing/uniform/worldport/nurse
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/shorts
+	display_name = "short shorts selection"
+	path = /obj/item/clothing/uniform/worldport/shorts
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/pants
+	display_name = "pants selection"
+	path = /obj/item/clothing/uniform/worldport/pants
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/track
+	display_name = "track pants selection"
+	path = /obj/item/clothing/uniform/worldport/track
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/jeans
+	display_name = "jeans selection"
+	path = /obj/item/clothing/uniform/worldport/jeans
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/baggy
+	display_name = "baggy pants selection"
+	path = /obj/item/clothing/uniform/worldport/baggy
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/cargo
+	display_name = "cargo pants selection"
+	path = /obj/item/clothing/uniform/worldport/cargo
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/yoga
+	display_name = "yoga pants selection"
+	path = /obj/item/clothing/uniform/worldport/yoga
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/skirt
+	display_name = "skirt selection"
+	path = /obj/item/clothing/uniform/worldport/skirt
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/vaga
+	display_name = "vagabond outfit selection"
+	path = /obj/item/clothing/uniform/worldport/vaga
+	slot = slot_w_uniform
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/worldport/harness
+	display_name = "gear harness"
+	path = /obj/item/clothing/uniform/worldport/harness
+	slot = slot_w_uniform
+
+/datum/gear/uniform/worldport/polychrome/skirt/flower
+	display_name = "flower skirt"
+	path = /obj/item/clothing/uniform/worldport/polychrome/skirt/flower
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/skirt/mini
+	display_name = "miniskirt"
+	path = /obj/item/clothing/uniform/worldport/polychrome/skirt/mini
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/dress/lacy
+	display_name = "lacy dress"
+	path = /obj/item/clothing/uniform/worldport/polychrome/dress/lacy
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/dress/mini
+	display_name = "mini dress"
+	path = /obj/item/clothing/uniform/worldport/polychrome/dress/mini
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/sun
+	display_name = "sundress"
+	path = /obj/item/clothing/uniform/worldport/polychrome/sun
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/sun/mini
+	display_name = "mini sundress"
+	path = /obj/item/clothing/uniform/worldport/polychrome/sun/mini
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/gown/formal/white
+	display_name = "formal gown"
+	path = /obj/item/clothing/uniform/worldport/polychrome/gown/formal/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/ethnic/cheongsam
+	display_name = "cheongsam"
+	path = /obj/item/clothing/uniform/worldport/polychrome/ethnic/cheongsam
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/swim/white
+	display_name = "one-piece swimsuit"
+	path = /obj/item/clothing/uniform/worldport/polychrome/swim/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+	cost = 2
+
+/datum/gear/uniform/worldport/polychrome/cheer
+	display_name = "cheerleader outfit"
+	path = /obj/item/clothing/uniform/worldport/polychrome/cheer
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/shorts/white
+	display_name = "short shorts"
+	path = /obj/item/clothing/uniform/worldport/polychrome/shorts/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/pants/white
+	display_name = "pants"
+	path = /obj/item/clothing/uniform/worldport/polychrome/pants/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/track/white
+	display_name = "track pants"
+	path = /obj/item/clothing/uniform/worldport/polychrome/track/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/baggy/pants/white
+	display_name = "baggy pants"
+	path = /obj/item/clothing/uniform/worldport/polychrome/baggy/pants/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/cargo/white
+	display_name = "cargo pants"
+	path = /obj/item/clothing/uniform/worldport/polychrome/cargo/white
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/uniform/worldport/polychrome/yoga
+	display_name = "yoga pants"
+	path = /obj/item/clothing/uniform/worldport/polychrome/yoga
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
+
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.
