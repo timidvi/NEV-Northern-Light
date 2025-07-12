@@ -472,7 +472,7 @@
 	update_icon()
 	update_nearby_tiles()
 	operating = FALSE
-	if(autoclose)
+	if(autoclose && !QDELETED(src)) // Eclipse edit
 		var/wait = normalspeed ? 150 : 5
 		addtimer(CALLBACK(src, PROC_REF(close)), wait)
 	return TRUE
