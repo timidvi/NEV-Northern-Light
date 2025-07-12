@@ -10014,7 +10014,7 @@
 "awY" = (
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
-	sortType = list("QM                Office");
+	sortType = list("QM                                Office");
 	tag = "icon-pipe-j2s"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -23476,7 +23476,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 1;
 	icon_state = "pipe-j2s";
-	sortType = list("Security","First                Officer                Office")
+	sortType = list("Security","First                                Officer                                Office")
 	},
 /obj/structure/cable{
 	d1 = 2;
@@ -24214,7 +24214,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 2;
 	icon_state = "pipe-j2s";
-	sortType = list("Medbay","CMO                Office","Chemistry","Research","Robotics");
+	sortType = list("Medbay","CMO                                Office","Chemistry","Research","Robotics");
 	tag = "icon-pipe-j2s"
 	},
 /obj/structure/cable/green{
@@ -28659,7 +28659,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 2;
 	icon_state = "pipe-j2s";
-	sortType = list("RD                Office");
+	sortType = list("RD                                Office");
 	tag = "icon-pipe-j2s"
 	},
 /obj/structure/catwalk,
@@ -29773,7 +29773,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 2;
 	icon_state = "pipe-j2s";
-	sortType = list("NeoTheology                Machine                Room");
+	sortType = list("NeoTheology                                Machine                                Room");
 	tag = "icon-pipe-j2s"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -31870,7 +31870,7 @@
 	frequency = 1443;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter"="Mixed                Air                In","air_sensor"="Mixed                Air                Supply                Tank","mair_out_meter"="Mixed                Air                Out","dloop_atm_meter"="Distribution                Loop","wloop_atm_meter"="Waste                Loop")
+	sensors = list("mair_in_meter"="Mixed                                Air                                In","air_sensor"="Mixed                                Air                                Supply                                Tank","mair_out_meter"="Mixed                                Air                                Out","dloop_atm_meter"="Distribution                                Loop","wloop_atm_meter"="Waste                                Loop")
 	},
 /obj/machinery/camera/network/engineering{
 	dir = 1
@@ -33132,7 +33132,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                Oxide","waste_sensor"="Gas                Mix                Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                                Oxide","waste_sensor"="Gas                                Mix                                Tank")
 	},
 /obj/machinery/power/apc{
 	name = "South APC";
@@ -39001,7 +39001,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 1;
 	icon_state = "pipe-j2s";
-	sortType = list("Engineering","CE                Office","Atmospherics")
+	sortType = list("Engineering","CE                                Office","Atmospherics")
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -40072,7 +40072,7 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/sortjunction{
-	sortType = list("Construction                Site")
+	sortType = list("Construction                                Site")
 	},
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section4deck4port)
@@ -43689,7 +43689,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 2;
 	icon_state = "pipe-j2s";
-	sortType = list("First                Officer                Office")
+	sortType = list("First                                Officer                                Office")
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -49884,7 +49884,7 @@
 	input_tag = "toxins1_in";
 	name = "Mixing Chamber 1 Monitor";
 	output_tag = "toxins1_out";
-	sensors = list("toxins_mixing_1"="Mixing                Chamber                -                1")
+	sensors = list("toxins_mixing_1"="Mixing                                Chamber                                -                                1")
 	},
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/eris/rnd/mixing)
@@ -50036,7 +50036,7 @@
 	dir = 8;
 	frequency = 1430;
 	name = "Mixing Chamber Monitor";
-	sensors = list("toxins_mixing_1"="Mixing                Chamber                -                1","toxins_mixing_2"="Mixing                Chamber                -                2")
+	sensors = list("toxins_mixing_1"="Mixing                                Chamber                                -                                1","toxins_mixing_2"="Mixing                                Chamber                                -                                2")
 	},
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/eris/rnd/mixing)
@@ -50300,7 +50300,7 @@
 	input_tag = "toxins2_in";
 	name = "Mixing Chamber 2 Monitor";
 	output_tag = "toxins2_out";
-	sensors = list("toxins_mixing_2"="Mixing                Chamber                -                2")
+	sensors = list("toxins_mixing_2"="Mixing                                Chamber                                -                                2")
 	},
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/eris/rnd/mixing)
@@ -59653,7 +59653,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 2;
 	icon_state = "pipe-j2s";
-	sortType = list("Cargo                Bay","QM                Office","Library                Backroom","Chapel","Preacher                Office","Theatre","Hydroponics","NeoTheology                Machine                Room");
+	sortType = list("Cargo                                Bay","QM                                Office","Library                                Backroom","Chapel","Preacher                                Office","Theatre","Hydroponics","NeoTheology                                Machine                                Room");
 	tag = "icon-pipe-j2s"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -75906,25 +75906,26 @@
 /turf/simulated/floor/reinforced,
 /area/eris/medical/genetics)
 "drc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/sortjunction{
 	dir = 8;
 	icon_state = "pipe-j2s";
 	sortType = list("Bar")
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section3deck2port)
@@ -76385,8 +76386,12 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "dsb" = (
@@ -80818,7 +80823,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/disposalpipe/sortjunction{
 	dir = 8;
-	sortType = list("CMO                Office")
+	sortType = list("CMO                                Office")
 	},
 /obj/structure/bed/chair/office/light{
 	dir = 1
@@ -82593,7 +82598,7 @@
 "dGD" = (
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
-	sortType = list("Cargo                Bay");
+	sortType = list("Cargo                                Bay");
 	tag = "icon-pipe-j2s"
 	},
 /turf/simulated/floor/plating/under,
@@ -84004,7 +84009,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                Oxide","waste_sensor"="Gas                Mix                Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon                                Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous                                Oxide","waste_sensor"="Gas                                Mix                                Tank")
 	},
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/eris/command/exultant)
@@ -84880,7 +84885,7 @@
 	input_tag = "cooling_in";
 	name = "Engine Cooling Control";
 	output_tag = "cooling_out";
-	sensors = list("engine_sensor"="Engine                Core")
+	sensors = list("engine_sensor"="Engine                                Core")
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/engineering/engine_room)
@@ -91236,35 +91241,20 @@
 "dZT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/structure/table/rack,
 /obj/structure/cable/green{
 	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/table/rack,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "dZU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/structure/table/rack,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "dZV" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/button/remote/blast_door{
 	id = "maint_hatch_Docking_port";
 	name = "Maintenance Hatch Control";
@@ -91272,18 +91262,14 @@
 	req_access = null
 	},
 /obj/structure/table/rack,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "dZW" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/structure/railing,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section3deck2port)
 "dZX" = (
@@ -92623,12 +92609,20 @@
 /turf/simulated/floor/reinforced/engine,
 /area/eris/engineering/propulsion/right)
 "edi" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
@@ -92645,6 +92639,12 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "edl" = (
@@ -94753,7 +94753,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 1;
 	icon_state = "pipe-j2s";
-	sortType = list("CE                Office")
+	sortType = list("CE                                Office")
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -102576,7 +102576,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 1;
 	icon_state = "pipe-j2s";
-	sortType = list("Library                Backroom")
+	sortType = list("Library                                Backroom")
 	},
 /obj/structure/railing{
 	dir = 4;
@@ -105554,7 +105554,7 @@
 	frequency = 1443;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter"="Mixed                Air                In","air_sensor"="Mixed                Air                Supply                Tank","mair_out_meter"="Mixed                Air                Out","dloop_atm_meter"="Distribution                Loop","wloop_atm_meter"="Engine                Waste")
+	sensors = list("mair_in_meter"="Mixed                                Air                                In","air_sensor"="Mixed                                Air                                Supply                                Tank","mair_out_meter"="Mixed                                Air                                Out","dloop_atm_meter"="Distribution                                Loop","wloop_atm_meter"="Engine                                Waste")
 	},
 /obj/machinery/light{
 	dir = 8
@@ -106501,6 +106501,9 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "fXo" = (
@@ -106633,6 +106636,15 @@
 	},
 /turf/simulated/floor/grass,
 /area/eris/crew_quarters/hydroponics)
+"gxR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "gzs" = (
 /obj/structure/flora/pottedplant/random,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -106874,6 +106886,15 @@
 /obj/spawner/scrap/sparse/low_chance,
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section3deck5starboard)
+"hEJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "hGN" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -106948,6 +106969,15 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/crew_quarters/sleep/cryo)
+"hNB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "hNQ" = (
 /obj/machinery/firealarm{
 	pixel_y = 28
@@ -107358,6 +107388,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "jrc" = (
@@ -107442,6 +107475,12 @@
 /obj/effect/shuttle_landmark/merc/armory,
 /turf/space,
 /area/space)
+"jBW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "jDU" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance_medical{
@@ -107467,6 +107506,12 @@
 /obj/effect/floor_decal/semiotic/ladder,
 /turf/simulated/floor/tiled/techmaint,
 /area/eris/maintenance/section4deck1central)
+"jEo" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "jGP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -107816,6 +107861,8 @@
 "kZT" = (
 /obj/machinery/door/airlock/glass,
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "lbR" = (
@@ -107892,20 +107939,8 @@
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section3deck4starboard)
 "lmN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/item/modular_computer/console/preset/security/camera,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/eris/security/checkpoint/supply)
 "lsO" = (
@@ -108147,6 +108182,14 @@
 "lVu" = (
 /obj/structure/noticeboard{
 	pixel_x = -30
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
+"lVy" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
@@ -108544,6 +108587,9 @@
 /obj/machinery/camera/network/third_section{
 	dir = 8
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "nkF" = (
@@ -108579,6 +108625,12 @@
 "nnG" = (
 /obj/machinery/alarm{
 	pixel_y = 26
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
@@ -108652,15 +108704,11 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/eris/engineering/shield_generator)
 "nFL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/structure/table/rack,
+/obj/machinery/alarm{
+	pixel_y = 26
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "nHM" = (
@@ -108726,6 +108774,14 @@
 /obj/machinery/door/airlock/glass_security{
 	name = "Security Post";
 	req_access = list(1)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/eris/security/checkpoint/supply)
@@ -109439,6 +109495,12 @@
 	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/eris/engineering/atmos/storage)
+"qlp" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "qmN" = (
 /obj/structure/bed/chair/shuttle,
 /obj/spawner/scrap,
@@ -109478,10 +109540,23 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/eris/maintenance/section4deck2port)
 "qve" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/bluecorner,
@@ -109504,14 +109579,9 @@
 /turf/simulated/floor/wood,
 /area/eris/command/bridgebar)
 "qyr" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/item/modular_computer/console/preset/security/camera,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
+/obj/machinery/alarm{
+	pixel_y = 26
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/steel/bluecorner,
@@ -109693,6 +109763,10 @@
 	},
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/eris/crew_quarters/bar)
+"rhO" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/hull,
+/area/space)
 "rhQ" = (
 /obj/machinery/camera/network/engineering{
 	dir = 8
@@ -110080,12 +110154,12 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "West APC";
-	pixel_x = -28
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/obj/structure/cable/green,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/eris/security/checkpoint/supply)
 "syp" = (
@@ -110094,15 +110168,21 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/eris/engineering/engine_room)
 "syz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "szH" = (
@@ -110218,7 +110298,15 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall,
 /area/eris/hallway/side/section3deck2port)
 "sJL" = (
 /mob/living/carbon/human/monkey,
@@ -110244,16 +110332,16 @@
 /turf/simulated/floor/carpet/gaycarpet,
 /area/eris/crew_quarters/artistoffice)
 "sOZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/wall/r_wall,
-/area/eris/security/checkpoint/supply)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/eris/hallway/side/section3deck2port)
 "sPK" = (
 /obj/structure/sink{
 	dir = 8;
@@ -110359,6 +110447,12 @@
 	dir = 8;
 	pixel_x = -6;
 	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
@@ -111130,15 +111224,15 @@
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section1deck2central)
 "vRj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/wall/r_wall,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/steel,
 /area/eris/hallway/side/section3deck2port)
 "vRP" = (
 /obj/machinery/neotheology/cruciformforge,
@@ -111337,10 +111431,15 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/eris/security/checkpoint/supply)
 "wAI" = (
@@ -111532,21 +111631,19 @@
 /turf/simulated/floor/tiled/steel,
 /area/eris/quartermaster/hangarsupply)
 "xzp" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/alarm{
-	pixel_y = 26
-	},
 /obj/structure/table/reinforced,
 /obj/machinery/button/remote/blast_door{
 	id = "trading_lockddown";
 	name = "Trading Dock Lockdown Control"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "North APC";
+	pixel_y = 28
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/eris/security/checkpoint/supply)
@@ -244566,7 +244663,7 @@ aaa
 aaa
 wSh
 cwn
-wco
+jEo
 wco
 cwn
 aaa
@@ -244768,7 +244865,7 @@ cwn
 cwn
 cwn
 cwn
-wco
+jBW
 wco
 cwn
 aaa
@@ -244970,7 +245067,7 @@ dZT
 edi
 kZT
 lVu
-wco
+hNB
 wco
 cwn
 aaa
@@ -245374,7 +245471,7 @@ dZV
 edk
 osl
 wco
-weZ
+sOZ
 lZJ
 cwn
 abF
@@ -245576,7 +245673,7 @@ nFL
 syz
 ifg
 wco
-weZ
+vRj
 ndm
 cwn
 abF
@@ -245774,7 +245871,7 @@ abF
 abF
 abF
 cwn
-vRj
+cwn
 sGJ
 cwn
 eSY
@@ -246378,7 +246475,7 @@ dpt
 dvi
 abF
 abF
-abF
+rhO
 dou
 xzp
 qve
@@ -246582,7 +246679,7 @@ dvi
 dvi
 abF
 dou
-sOZ
+dou
 nQt
 dou
 mSw
@@ -246989,7 +247086,7 @@ dqI
 ecM
 eaj
 cwn
-wco
+gxR
 vtO
 cmE
 mvF
@@ -247595,8 +247692,8 @@ cwn
 cwn
 cwn
 cwn
-wco
-wco
+hEJ
+qlp
 cmE
 dvG
 ebW
@@ -247798,7 +247895,7 @@ dkH
 wco
 wco
 jpR
-wco
+lVy
 cmE
 cmE
 ebW
