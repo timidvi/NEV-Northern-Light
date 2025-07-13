@@ -1,0 +1,4 @@
+author: Trilbyspaceclone
+delete-after: true
+changes:
+  - server: Fixes issues leading to linters causing warnings and errors
