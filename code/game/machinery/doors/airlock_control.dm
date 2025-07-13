@@ -32,7 +32,7 @@
 		completing = FALSE
 		cur_command = null
 		return TRUE
-	if(!completing)
+	if(!completing && !QDELETED(src)) // Eclipse edit
 		addtimer(CALLBACK(src , PROC_REF(execute_current_command)), 2 SECONDS) // Fuck it , try again.
 		completing = TRUE
 	return FALSE

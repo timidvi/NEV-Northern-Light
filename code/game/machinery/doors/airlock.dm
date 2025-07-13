@@ -1203,7 +1203,7 @@ There are 9 wires.
 		for(var/turf/turf in locs)
 			for(var/atom/movable/AM in turf)
 				if(AM.blocks_airlock())
-					if(autoclose && tryingToLock)
+					if(autoclose && tryingToLock && !QDELETED(src)) // Eclipse edit
 						addtimer(CALLBACK(src, PROC_REF(close)), 30 SECONDS)
 					if(world.time > next_beep_at)
 						playsound(loc, 'sound/machines/buzz-two.ogg', 30, 1, -1)

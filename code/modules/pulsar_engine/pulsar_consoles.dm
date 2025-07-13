@@ -24,7 +24,7 @@
 /obj/machinery/pulsar/LateInitialize()
 	scan_for_fuel()
 	. = ..()
-	
+
 
 /obj/machinery/pulsar/relaymove(mob/user, direction)
 	if(map_active && linked)
@@ -99,7 +99,7 @@
 
 	else if(href_list["scan_fuel"])
 		scan_for_fuel()
-	
+
 	else if(href_list["set_shield"])
 		var/target_level = input(usr, "Set shielding power", "Shield control", 50) as num
 		if(target_level < 100)
@@ -176,7 +176,7 @@
 	pulsar_console = locate() in world //I can get away with it once, right?
 	if(pulsar_console)
 		console_area = get_area(pulsar_console) //Area stored so reconnections are cheaper.
-	
+
 	portal = locate() in get_area(src)
 
 /obj/machinery/power/pulsar_power_bridge/Process()
@@ -262,7 +262,7 @@
 	. = ..()
 	if(air_contents)
 		QDEL_NULL(air_contents)
-	connected_console.tank = null
+	connected_console?.tank = null // Eclipse Edit
 	SSnano.update_uis(connected_console)
 
 /obj/structure/pulsar_fuel_tank/attackby(obj/item/W as obj, mob/user as mob)
@@ -272,7 +272,7 @@
 		tank.remove_air(tank.volume)
 		to_chat(user, SPAN_NOTICE("You pump the contents of [tank] into [src]"))
 		playsound(src, 'sound/effects/spray.ogg', 50, 1, -3)
-		
+
 		if(round(air_contents.get_total_moles()) > 100)
 			icon_state = "pulsar_tank_burst"
 			visible_message(SPAN_DANGER("[src] looks like it's about to explode!"))
