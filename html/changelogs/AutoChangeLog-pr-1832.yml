@@ -1,0 +1,7 @@
+author: timidvi
+delete-after: true
+changes:
+  - rscadd: clothing items from World
+  - imageadd: added World icon files in the modular system
+  - code_imp: changed some code for loadouts, they are demarcated by Eclipse 
+      Edits as per usual.

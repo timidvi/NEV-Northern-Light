@@ -1,0 +1,11 @@
+author: Valanthe500
+delete-after: true
+changes:
+  - rscadd: Added laser muskets to church for home defense, as the founding 
+      fathers intended.
+  - bugfix: Moved Artist Office to Club
+  - bugfix: Renovated Firing Range
+  - bugfix: Replaced missing area near Trading Dock, fixing duplicate APCs in 
+      Fitness Room
+  - rscadd: Added APC to Reserve Teleporter
+  - rscadd: Added Deep Mining Drill to Mining Shuttle
