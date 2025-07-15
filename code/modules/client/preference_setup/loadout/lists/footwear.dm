@@ -191,4 +191,11 @@
 	slot = slot_shoes
 	flags = GEAR_HAS_COLOR_SELECTION
 
-//Eclipse Edit Ends - world code ports
+//Eclipse Edit Continues - BriCheese-made items
+/datum/gear/shoes/bricheese/firstoffboots
+	display_name = "knee high heels, first officer"
+	path = /obj/item/clothing/feet/bricheese/firstoffboots
+	slot = slot_shoes
+	allowed_roles = list("First Officer")
+
+//Eclipse Edit Ends - world code ports, BriCheese items

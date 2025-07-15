@@ -615,4 +615,11 @@
 	slot = slot_w_uniform
 	flags = GEAR_HAS_COLOR_SELECTION
 
+//Eclipse Edit Continues - BriCheese-made items
+/datum/gear/uniform/bricheese/firstoff
+	display_name = "suitskirt, first officer"
+	path = /obj/item/clothing/uniform/bricheese/firstoff
+	slot = slot_w_uniform
+	allowed_roles = list("First Officer")
+
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.
