@@ -317,4 +317,11 @@
 	slot = slot_wear_suit
 	flags = GEAR_HAS_COLOR_SELECTION
 
+//Eclipse Edit Continues - BriCheese-made items
+/datum/gear/suit/bricheese/firstoffcloak
+	display_name = "mantle, first officer"
+	path = /obj/item/clothing/suit/bricheese/firstoffcloak
+	slot = slot_wear_suit
+	allowed_roles = list("First Officer")
+
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.
