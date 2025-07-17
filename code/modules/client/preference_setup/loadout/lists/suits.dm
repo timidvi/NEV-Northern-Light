@@ -324,4 +324,16 @@
 	slot = slot_wear_suit
 	allowed_roles = list("First Officer")
 
+/datum/gear/suit/bricheese/polychrome/cami
+	display_name = "polychrome cami-top"
+	path = /obj/item/clothing/suit/bricheese/cami
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/bricheese/polychrome/cami/midriff
+	display_name = "polychrome crop cami-top"
+	path = /obj/item/clothing/suit/bricheese/cami/midriff
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.

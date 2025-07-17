@@ -98,7 +98,7 @@
 	icon_state = "beret_purple"
 
 /obj/item/clothing/under/bambi
-	name = "Bambi\'s Black Bodysuit"
+	name = "black bodysuit"
 	desc = "Clingy, skintight, and warmer than you'd think for a bodysuit. It's just a little glossy, too!"
 	icon = 'zzz_modular_eclipse/icons/custom_items/under.dmi'
 	icon_state = "timidvi"
@@ -107,7 +107,7 @@
 	spawn_blacklisted = TRUE
 
 /obj/item/clothing/shoes/jackboots/bambi
-	name = "Bambi\'s Long Boots"
+	name = "long heeled boots"
 	desc = "Black and thigh-high high heels. The heels are surprisingly a bit on the shorter side... Or maybe not, when you have to be ready to run from roaches at any time."
 	icon = 'zzz_modular_eclipse/icons/custom_items/shoes.dmi'
 	icon_state = "timidvi_boots"
@@ -115,13 +115,30 @@
 	spawn_blacklisted = TRUE
 
 /obj/item/clothing/suit/storage/bambi
-	name = "Bambi\'s Warm Jacket"
+	name = "warm jacket"
 	desc = "Thick and really, really warm. Perfect if you're basically just wearing a swimsuit underneath in the cold corridors of a roach infested spaceship."
 	icon = 'zzz_modular_eclipse/icons/custom_items/suit.dmi'
 	icon_state = "timidvi_jacket"
 	icon_override = 'zzz_modular_eclipse/icons/custom_items/mob.dmi'
 	spawn_blacklisted = TRUE
 
+/obj/item/clothing/under/ileravel
+	name = "captive dancer\'s outfit"
+	desc = "A hempen halter top and loincloth and adorned with jewellery and iron, industrial collars and cuffs."
+	icon = 'zzz_modular_eclipse/icons/custom_items/under.dmi'
+	icon_state = "timidvi_2"
+	icon_override = 'zzz_modular_eclipse/icons/custom_items/mob.dmi'
+	icon_override_female = 'zzz_modular_eclipse/icons/custom_items/mob.dmi'
+	spawn_blacklisted = TRUE
+
+/obj/item/clothing/under/delal
+	name = "sheer dancer\'s outfit"
+	desc = "A gauzy halter top and loincloth and adorned with jewellery."
+	icon = 'zzz_modular_eclipse/icons/custom_items/under.dmi'
+	icon_state = "timidvi_3"
+	icon_override = 'zzz_modular_eclipse/icons/custom_items/mob.dmi'
+	icon_override_female = 'zzz_modular_eclipse/icons/custom_items/mob.dmi'
+	spawn_blacklisted = TRUE
 
 /obj/item/clothing/under/rank/dalphine
 	name = "Dalphine Panzer\'s Aegis Jager suit"
@@ -147,6 +164,7 @@
 	icon_state = "befreier"
 	item_state = "befreier"
 	price_tag = 3000
+	spawn_blacklisted = TRUE
 
 
 
