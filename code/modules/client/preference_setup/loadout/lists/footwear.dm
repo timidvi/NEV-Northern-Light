@@ -198,4 +198,9 @@
 	slot = slot_shoes
 	allowed_roles = list("First Officer")
 
+/datum/gear/shoes/bricheese/pinkcanvas
+	display_name = "pink canvas shoes"
+	path = /obj/item/clothing/feet/bricheese/pinkcanvas
+	slot = slot_shoes
+
 //Eclipse Edit Ends - world code ports, BriCheese items

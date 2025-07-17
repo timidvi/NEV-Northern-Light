@@ -622,4 +622,14 @@
 	slot = slot_w_uniform
 	allowed_roles = list("First Officer")
 
+/datum/gear/uniform/bricheese/skirt/sport
+	display_name = "pink sporty skirt"
+	path = /obj/item/clothing/uniform/bricheese/skirt/sport
+	slot = slot_w_uniform
+
+/datum/gear/uniform/bricheese/skirt/pleated
+	display_name = "polychrome pleated skirt"
+	path = /obj/item/clothing/uniform/bricheese/skirt
+	slot = slot_w_uniform
+	flags = GEAR_HAS_COLOR_SELECTION
 //Eclipse Edit Ends - Adding in new custom commissioned clothes.

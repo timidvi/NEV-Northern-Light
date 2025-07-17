@@ -71,25 +71,34 @@
 	ckey = "selakitteh"
 
 /datum/gear/custom/timidvi1
-	display_name = "Bambis Black Bodysuit"
+	display_name = "black bodysuit"
 	path = /obj/item/clothing/under/bambi
 	ckey = "timidvi"
 
 /datum/gear/custom/timidvi2
-	display_name = "Bambis Warm Jacket"
+	display_name = "warm jacket"
 	path = /obj/item/clothing/suit/storage/bambi
 	ckey = "timidvi"
 
 /datum/gear/custom/timidvi3
-	display_name = "Bambis Long Boots"
+	display_name = "long heeled boots"
 	path = /obj/item/clothing/shoes/jackboots/bambi
+	ckey = "timidvi"
+
+/datum/gear/custom/timidvi_2
+	display_name = "captive dancer outfit"
+	path = /obj/item/clothing/under/ileravel
+	ckey = "timidvi"
+
+/datum/gear/custom/timidvi_3
+	display_name = "sheer dancer outfit"
+	path = /obj/item/clothing/under/delal
 	ckey = "timidvi"
 
 /datum/gear/custom/scorn7
 	display_name = "Dalphine Panzers Aegis Jager suit"
 	path = /obj/item/clothing/under/rank/dalphine
 	ckey = "scorn7"
-
 
 /datum/gear/custom/ejcat
 	display_name = "Mysterious Button"
@@ -101,7 +110,7 @@
 	path = /obj/item/device/synthesized_instrument/synthesizer/kira
 	ckey = "sfox63"
 
-/datum/gear/custom/Gman222
+/datum/gear/custom/Gman22
 	display_name = "Boemus' Befreier"
 	path = /obj/item/gun/projectile/avasarala/befreier
-	ckey = "Gman222"
+	ckey = "Gman22"
