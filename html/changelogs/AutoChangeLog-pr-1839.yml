@@ -1,0 +1,6 @@
+author: timidvi
+delete-after: true
+changes:
+  - rscadd: Added Iso's First Officer outfit as a generic loadout item.
+  - code_imp: changed some loadout code, demarcated as usual by Eclipse Edit 
+      comments.
