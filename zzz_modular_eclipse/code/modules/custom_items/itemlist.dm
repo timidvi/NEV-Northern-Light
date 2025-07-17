@@ -164,6 +164,7 @@
 	icon_state = "befreier"
 	item_state = "befreier"
 	price_tag = 3000
+	spawn_blacklisted = TRUE
 
 
 

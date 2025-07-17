@@ -110,7 +110,7 @@
 	path = /obj/item/device/synthesized_instrument/synthesizer/kira
 	ckey = "sfox63"
 
-/datum/gear/custom/Gman22
-	display_name = "Boemus' Befreier"
+/datum/gear/custom/Gman222
+	display_name = "Boemus Befreier"
 	path = /obj/item/gun/projectile/avasarala/befreier
-	ckey = "Gman22"
+	ckey = "Gman222"
