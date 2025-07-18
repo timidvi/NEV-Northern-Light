@@ -200,7 +200,7 @@
 	)
 
 	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/chaplain, /datum/job/merchant, /datum/job/cmo, /datum/job/rd, /datum/job/ihc)
-	restricted_depts = IRONHAMMER | MEDICAL | SCIENCE | CHURCH | GUILD | CIVILIAN | SERVICE
+	restricted_depts = IRONHAMMER | MEDICAL | SCIENCE | COMMAND | ENGINEERING
 
 /datum/category_item/setup_option/background/origin/tripwire
 	name = "Combat Engineer"
