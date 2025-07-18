@@ -1,0 +1,5 @@
+author: timidvi
+delete-after: true
+changes:
+  - bugfix: fixed Peanut's custom item by literally changing a capital G to a 
+      lowercase g. Maybe. Probably.
