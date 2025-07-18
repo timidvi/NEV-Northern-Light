@@ -1,0 +1,9 @@
+author: timidvi
+delete-after: true
+changes:
+  - rscadd: Added two varieties of skirt and two varieties of cami-tops. Also 
+      adds custom items for BriCheese/timidvi.
+  - bugfix: fixes Peanut/Gman222's custom item loadout and spawning (for real 
+      this time, the culprit was an apostrophe).
+  - spellcheck: fixed a few typos in my previous custom items.
+  - config: changed the itemlist config to add and fix custom items noted above.
