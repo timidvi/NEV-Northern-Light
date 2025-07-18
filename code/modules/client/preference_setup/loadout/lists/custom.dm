@@ -113,4 +113,4 @@
 /datum/gear/custom/Gman222
 	display_name = "Boemus Befreier"
 	path = /obj/item/gun/projectile/avasarala/befreier
-	ckey = "Gman222"
+	ckey = "gman222"
